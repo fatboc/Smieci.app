@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d50000</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#64b5f6</color>
+    <color name="colorBackground">#cacaca</color>
+    <color name="textColor">#363636</color>
+    <color name="textHiglightColor">#710000</color>
+    <color name="textAppBarColor">#ffffff</color>
+    <color name="textMenuColor">#efefef</color>
+    <color name="activatedColor">#bfbfbf</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

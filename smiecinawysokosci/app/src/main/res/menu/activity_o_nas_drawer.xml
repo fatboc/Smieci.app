@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/o_nas"
+        android:title="O nas" />
+    <item
+        android:id="@+id/spot"
+        android:title="Spot" />
+    <item
+        android:id="@+id/przed_i_po"
+        android:title="Przed i po" />
+    <item
+        android:id="@+id/o360"
+        android:title="Zobacz w 360" />
+    </group>
+
+</menu>

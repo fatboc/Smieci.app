@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Śmieci na wysokości</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="whatever">Wspólnie możemy oczyścić Warszawę z wielkoformatowych śmieci!</string>
+    <string name="title_activity_o_nas">O nas</string>
+    <string name="description1">Nasza akcja ma na celu uświadomienie warszawiakom, że to oni mogą wszystko zmienić. Brak regulacji dotyczących reklam wielkoformatowych jest tematem dyskusji od kilku lat, jednak większość z nas nie była nim zainteresowana. Zainteresowanie opinii publicznej tematem zmusiłoby polityków do zajęcia się nim.</string>
+    <string name="description2">Gigantyczne obrazki, jaskrawe litery, wielki format. Billboardy zdają się nieustannie nas przytłaczać. Zdecydowana większość z nas zgadza się, że odejmują miastu estetyki. Są one uznawane za formę zanieczyszczenia wizualnego. Zasłaniają zabytki architektury, tereny naturalne. Uniemożliwiają docenienie krajobrazu.</string>
+    >
+    <string name="description3">Billboardy zarówno odzwierciedlają, jak i kształtują opinię publiczną. Czy nasze opinie tworzyć mają krzykliwe reklamy, mające na celu zmuszenie nas do nabycia kolejnego produktu? Czy wolimy widok Warszawy bez śmieci na patykach? Te pytania powinni sobie zadać wszyscy warszawiacy. Świadomość społeczna i znajomość problemu to podstawa jego rozwiązania.</string>
+    <string name="title_activity_o360">Zobacz w 360</string>
+    <string name="onz">Rondo ONZ</string>
+    <string name="centrum">Rotunda</string>
+    <string name="costam">Hotel Metropol</string>
+    <string name="title_activity_przed_i_po">Przed i po</string>
+
+    <string name="title_activity_vr_onz">vrONZ</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="rondo_onz">RONDO ONZ</string>
+</resources>
