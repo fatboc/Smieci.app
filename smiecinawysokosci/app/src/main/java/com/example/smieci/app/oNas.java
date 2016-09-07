@@ -29,8 +29,10 @@ public class oNas extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Tu będą się nami dzielić jak Jezusem", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://smiecinawysokosci.pl");
+                startActivity(Intent.createChooser(shareIntent, "Podziel się używając:"));
             }
         });
 
@@ -70,7 +72,8 @@ public class oNas extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.browser) {
-            return true;
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://smiecinawysokosci.pl"));
+            startActivity(browserIntent);
         }
 
         return super.onOptionsItemSelected(item);

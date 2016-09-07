@@ -17,8 +17,15 @@
     <string name="costam">Hotel Metropol</string>
     <string name="title_activity_przed_i_po">Przed i po</string>
 
-    <string name="title_activity_vr_onz">vrONZ</string>
+    <string name="title_activity_vr_onz">Rondo ONZ</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="rondo_onz">RONDO ONZ</string>
+
+    <string name="title_activity_vr_rotunda">vrRotunda</string>
+
+    <string name="title_activity_vr_metropol">vrMetropol</string>
+    <string name="rotunda">ROTUNDA</string>
+    <string name="metropol">METROPOL</string>
+    <string name="title_activity_slide1">Miejsce 1</string>
 </resources>

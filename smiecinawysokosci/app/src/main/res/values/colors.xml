@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#d50000</color>
-    <color name="colorPrimaryDark">#b71c1c</color>
-    <color name="colorAccent">#64b5f6</color>
-    <color name="colorBackground">#cacaca</color>
+    <color name="colorPrimary">#ffeb3b</color>
+    <color name="colorPrimaryDark">#ffd600</color>
+    <color name="colorAccent">#757575</color>
+    <color name="colorBackground">#eeeeee</color>
     <color name="textColor">#363636</color>
     <color name="textHiglightColor">#710000</color>
-    <color name="textAppBarColor">#ffffff</color>
-    <color name="textMenuColor">#efefef</color>
+    <color name="textAppBarColor">#f9f5f5</color>
+    <color name="textMenuColor">#eeeeee</color>
     <color name="activatedColor">#bfbfbf</color>
+    <color name="navColor">#212121</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>

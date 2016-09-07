@@ -18,6 +18,8 @@ import android.net.Uri;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +31,10 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Tu będą się nami dzielić jak Jezusem", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://smiecinawysokosci.pl");
+                startActivity(Intent.createChooser(shareIntent, "Podziel się używając:"));
             }
         });
 

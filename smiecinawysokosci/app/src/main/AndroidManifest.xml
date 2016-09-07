@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smieci.app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -46,7 +48,7 @@
                 android:value="com.example.smieci.app.MainActivity" />
         </activity>
         <activity
-            android:name=".vrONZ"
+            android:name=".Vr1"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_vr_onz"
             android:parentActivityName=".o360"
@@ -54,6 +56,36 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.smieci.app.o360" />
+        </activity>
+        <activity
+            android:name=".vrRotunda"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_vr_rotunda"
+            android:parentActivityName=".o360"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.smieci.app.o360" />
+        </activity>
+        <activity
+            android:name=".vrMetropol"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_vr_metropol"
+            android:parentActivityName=".o360"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.smieci.app.o360" />
+        </activity>
+        <activity
+            android:name=".slide1"
+            android:label="@string/title_activity_slide1"
+            android:parentActivityName=".Przed_i_po"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.smieci.app.Przed_i_po" />
         </activity>
     </application>
 

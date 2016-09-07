@@ -1,8 +1,8 @@
 package com.example.smieci.app;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.net.Uri;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -31,8 +32,10 @@ public class Przed_i_po extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Tu będą się nami dzielić jak Jezusem", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "http://smiecinawysokosci.pl");
+                startActivity(Intent.createChooser(shareIntent, "Podziel się używając:"));
             }
         });
 
@@ -51,6 +54,16 @@ public class Przed_i_po extends AppCompatActivity
 
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+
+                Intent intent = new Intent(getApplicationContext(), slide1.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -79,8 +92,8 @@ public class Przed_i_po extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.browser) {
-            Intent spotIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=y-baYo3OmH8"));
-            startActivity(spotIntent);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://smiecinawysokosci.pl"));
+            startActivity(browserIntent);
         }
 
         return super.onOptionsItemSelected(item);
